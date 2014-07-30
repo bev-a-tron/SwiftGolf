@@ -25,8 +25,20 @@ class Golf {
         return 42
     }
     
-    class func hole4(i:Int) -> [String] {
-        return ["placeholder"]
+    class func hole4(a:Int) -> [String] {
+        var b: [String] = []
+        for i in 1...a {
+            if (i % 3 == 0 && i % 5 == 0) {
+                b.append("fizzbuzz")
+            } else if (i % 3 == 0) {
+                b.append("fizz")
+            } else if (i % 5 == 0) {
+                b.append("buzz")
+            } else {
+                b.append(String(i))
+            }
+        }
+        return b
     }
     
     class func hole5(i:Int) -> [Int] {
