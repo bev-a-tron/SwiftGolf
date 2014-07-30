@@ -12,11 +12,13 @@ import Dollar
 class Golf {
 
     class func hole1(a: [Int]) -> Int {
-        return 24
+        return a.reduce(1,*)
     }
     
-    class func hole2() -> [String] {            
-        return ["placeholder"]
+    class func hole2() -> [String] {
+        var b:[String] = []
+        for i in 97...122{b += String(UnicodeScalar(i))}
+        return b
     }
     
     class func hole3(i: Int) -> Int {

@@ -8,7 +8,7 @@
 
 import Foundation
 
-let projectRepo = "/Users/tombrown/Workspace/SwiftGolf" // CHANGE ME
+let projectRepo = "/Users/balau/Projects/SwiftGolf" // CHANGE ME
 
 let path = "\(projectRepo)/SwiftGolf/Golf.swift"
 
